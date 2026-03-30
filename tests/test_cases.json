@@ -1,0 +1,122 @@
+[
+  {
+    "query": "What is self-attention mechanism?",
+    "expected_keywords": ["attention", "query", "key", "value", "softmax"]
+  },
+  {
+    "query": "How does retrieval augmented generation work?",
+    "expected_keywords": ["retrieval", "generation", "document", "knowledge"]
+  },
+  {
+    "query": "What is the transformer architecture?",
+    "expected_keywords": ["attention", "encoder", "decoder", "layer", "multi-head"]
+  },
+  {
+    "query": "Explain the BERT model",
+    "expected_keywords": ["bidirectional", "encoder", "pre-training", "masking", "token"]
+  },
+  {
+    "query": "What is prompt engineering?",
+    "expected_keywords": ["prompt", "instruction", "few-shot", "zero-shot", "template"]
+  },
+  {
+    "query": "How does fine-tuning work for large language models?",
+    "expected_keywords": ["fine-tuning", "training", "parameter", "gradient", "loss"]
+  },
+  {
+    "query": "What is the difference between encoder and decoder in transformers?",
+    "expected_keywords": ["encoder", "decoder", "attention", "autoregressive", "bidirectional"]
+  },
+  {
+    "query": "Explain chain-of-thought prompting",
+    "expected_keywords": ["chain", "thought", "reasoning", "step", "intermediate"]
+  },
+  {
+    "query": "What is vector similarity search?",
+    "expected_keywords": ["vector", "embedding", "similarity", "cosine", "distance"]
+  },
+  {
+    "query": "How does BM25 ranking algorithm work?",
+    "expected_keywords": ["term", "frequency", "document", "inverse", "score"]
+  },
+  {
+    "query": "What is LoRA and how does it reduce training cost?",
+    "expected_keywords": ["low-rank", "adaptation", "parameter", "efficient", "matrix"]
+  },
+  {
+    "query": "Explain the concept of knowledge distillation",
+    "expected_keywords": ["teacher", "student", "distill", "soft", "logit"]
+  },
+  {
+    "query": "How does reinforcement learning from human feedback work?",
+    "expected_keywords": ["reward", "human", "preference", "policy", "feedback"]
+  },
+  {
+    "query": "What is the role of positional encoding in transformers?",
+    "expected_keywords": ["position", "encoding", "sinusoidal", "sequence", "order"]
+  },
+  {
+    "query": "Explain the GPT model architecture",
+    "expected_keywords": ["generative", "pre-training", "autoregressive", "decoder", "language"]
+  },
+  {
+    "query": "What is in-context learning?",
+    "expected_keywords": ["context", "learning", "example", "demonstration", "prompt"]
+  },
+  {
+    "query": "How does multi-head attention improve model performance?",
+    "expected_keywords": ["head", "attention", "subspace", "parallel", "representation"]
+  },
+  {
+    "query": "What are the differences between word2vec and transformer embeddings?",
+    "expected_keywords": ["word2vec", "embedding", "contextual", "static", "representation"]
+  },
+  {
+    "query": "Explain the concept of attention masking",
+    "expected_keywords": ["mask", "attention", "causal", "padding", "sequence"]
+  },
+  {
+    "query": "What is the mixture of experts architecture?",
+    "expected_keywords": ["expert", "router", "gating", "sparse", "capacity"]
+  },
+  {
+    "query": "How does DPO differ from RLHF?",
+    "expected_keywords": ["direct", "preference", "optimization", "reward", "policy"]
+  },
+  {
+    "query": "What is flash attention and why is it faster?",
+    "expected_keywords": ["flash", "attention", "memory", "tiling", "io"]
+  },
+  {
+    "query": "Explain the concept of hallucination in large language models",
+    "expected_keywords": ["hallucination", "factual", "generation", "grounding", "accuracy"]
+  },
+  {
+    "query": "What is KV cache in transformer inference?",
+    "expected_keywords": ["key", "value", "cache", "inference", "decoding"]
+  },
+  {
+    "query": "How does the cross-encoder reranker work?",
+    "expected_keywords": ["cross", "encoder", "rerank", "relevance", "score"]
+  },
+  {
+    "query": "What is the difference between sparse and dense retrieval?",
+    "expected_keywords": ["sparse", "dense", "retrieval", "embedding", "lexical"]
+  },
+  {
+    "query": "Explain the concept of tokenization in NLP",
+    "expected_keywords": ["token", "subword", "vocabulary", "bpe", "encoding"]
+  },
+  {
+    "query": "What is the role of layer normalization in transformers?",
+    "expected_keywords": ["layer", "normalization", "mean", "variance", "stability"]
+  },
+  {
+    "query": "How does beam search decoding work?",
+    "expected_keywords": ["beam", "search", "decoding", "probability", "sequence"]
+  },
+  {
+    "query": "What is the scaling law for large language models?",
+    "expected_keywords": ["scaling", "parameter", "compute", "data", "performance"]
+  }
+]

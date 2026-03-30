@@ -1,0 +1,13 @@
+venv/
+__pycache__/
+*.pyc
+*.pyo
+.env
+*.db
+*.db-shm
+*.db-wal
+data/vector_db/
+data/papers/
+.DS_Store
+.idea/
+.vscode/
