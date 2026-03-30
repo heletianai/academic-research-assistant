@@ -15,14 +15,7 @@ from config.settings import LLM_MODEL, OPENROUTER_API_KEY, OPENROUTER_BASE_URL
 
 
 class AgentPlanner:
-    """
-    工具调用规划器：根据用户问题和可用工具，制定执行计划
-
-    设计决策：
-    - 输出 JSON 数组，每项包含 tool/args/purpose
-    - 限制最多3步，防止 LLM 幻觉出不存在的工具链
-    - 解析失败时返回空计划，不阻塞流程
-    """
+    """根据用户问题和可用工具制定执行计划（JSON 数组，最多3步）"""
 
     def __init__(self):
         self.client = OpenAI(api_key=OPENROUTER_API_KEY, base_url=OPENROUTER_BASE_URL)

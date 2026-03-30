@@ -11,11 +11,7 @@ from loguru import logger
 
 
 class ToolExecutor:
-    """
-    MCP 工具执行器
-
-    封装了同步→异步的桥接逻辑，提供统一的调用接口。
-    """
+    """MCP 工具执行器，封装同步→异步桥接"""
 
     def __init__(self, mcp_aggregator=None):
         self._aggregator = mcp_aggregator
@@ -29,20 +25,7 @@ class ToolExecutor:
         return self._aggregator is not None
 
     def execute(self, tool_name: str, tool_args: dict, timeout: int = 30) -> str:
-        """
-        执行单个工具调用
-
-        使用 ThreadPoolExecutor + asyncio.run() 桥接同步→异步，
-        避免在已有 event loop（如 Streamlit）中出现嵌套 loop 错误。
-
-        Args:
-            tool_name: 工具名称
-            tool_args: 工具参数
-            timeout: 超时秒数
-
-        Returns:
-            工具执行结果字符串
-        """
+        """执行单个工具调用，ThreadPoolExecutor 桥接避免 Streamlit event loop 冲突"""
         if not self.is_available:
             return f"工具 {tool_name} 不可用（MCP 未连接）"
 

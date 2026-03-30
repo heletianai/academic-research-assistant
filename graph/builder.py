@@ -188,8 +188,6 @@ def chat(app, query: str, thread_id: str = "default") -> dict:
     Returns:
         dict: {"status": "done"|"needs_confirm", "answer": str, "plan": list}
     """
-    from langgraph.types import Command
-
     config = {"configurable": {"thread_id": thread_id}}
 
     # 传入 MCP 工具列表

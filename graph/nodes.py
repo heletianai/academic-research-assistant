@@ -187,7 +187,7 @@ def human_confirm_node(state: AgentState) -> dict:
 
 
 # ══════════════════════════════════════════════════════════
-# 7. 工具执行节点
+# 6. 工具执行节点
 # ══════════════════════════════════════════════════════════
 
 # ToolExecutor 全局单例（在 builder.py 中初始化）
@@ -248,7 +248,7 @@ def tool_execute_node(state: AgentState) -> dict:
 
 
 # ══════════════════════════════════════════════════════════
-# 7.5 Reflexion 反思重规划节点
+# 7. Reflexion 反思重规划节点
 # ══════════════════════════════════════════════════════════
 
 def reflexion_node(state: AgentState) -> dict:
@@ -338,7 +338,7 @@ def reflexion_node(state: AgentState) -> dict:
 
 
 # ══════════════════════════════════════════════════════════
-# 6. 结果综合节点
+# 8. 结果综合节点
 # ══════════════════════════════════════════════════════════
 
 def tool_synthesis_node(state: AgentState) -> dict:
@@ -375,7 +375,7 @@ def tool_synthesis_node(state: AgentState) -> dict:
 
 
 # ══════════════════════════════════════════════════════════
-# 8. 条件路由函数
+# 9. 条件路由函数
 # ══════════════════════════════════════════════════════════
 
 def route_by_intent(state: AgentState) -> str:

@@ -11,14 +11,7 @@ from mcp_tools.mcp_client import MCPClient
 
 
 class MCPAggregator:
-    """
-    多 MCP Server 聚合器
-
-    核心设计：
-    - 动态发现：启动时扫描所有 Server 的工具列表
-    - 自动路由：调用时根据工具名找到对应的 Server
-    - 缓存机制：工具列表只获取一次，避免重复连接
-    """
+    """多 MCP Server 聚合：动态发现工具列表 + 按工具名自动路由到对应 Server"""
 
     def __init__(self, server_configs: List[dict]):
         """
