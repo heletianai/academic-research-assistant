@@ -1,0 +1,41 @@
+{
+  "test": "throughput_curve",
+  "model": "Qwen2.5-7B-Instruct-AWQ",
+  "max_tokens_per_request": 256,
+  "batch_sizes": [
+    1,
+    4,
+    8,
+    16
+  ],
+  "results": [
+    {
+      "concurrent": 1,
+      "wall_time_s": 2.6,
+      "total_output_tokens": 256,
+      "throughput_tokens_per_s": 98.31,
+      "avg_per_request_latency_s": 2.6
+    },
+    {
+      "concurrent": 4,
+      "wall_time_s": 2.74,
+      "total_output_tokens": 1024,
+      "throughput_tokens_per_s": 373.45,
+      "avg_per_request_latency_s": 2.74
+    },
+    {
+      "concurrent": 8,
+      "wall_time_s": 2.77,
+      "total_output_tokens": 2048,
+      "throughput_tokens_per_s": 738.33,
+      "avg_per_request_latency_s": 2.77
+    },
+    {
+      "concurrent": 16,
+      "wall_time_s": 2.85,
+      "total_output_tokens": 4096,
+      "throughput_tokens_per_s": 1439.47,
+      "avg_per_request_latency_s": 2.84
+    }
+  ]
+}

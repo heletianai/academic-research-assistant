@@ -49,6 +49,36 @@ Generation quality evaluated via LLM-as-Judge (Faithfulness + Relevancy).
 - **UI**: Streamlit
 - **Storage**: SQLite (checkpointer)
 
+## 推理性能 Benchmark（vLLM 部署）
+
+完整数据 / 脚本 / chart：[benchmarks/autodl_outputs/](benchmarks/autodl_outputs/README.md)
+
+### 配置
+- **GPU**：NVIDIA RTX 4090D 24GB（Ada SM_89）
+- **模型**：Qwen2.5-7B-Instruct-AWQ（4bit 量化）
+- **后端**：vLLM 0.10.2 PagedAttention + awq_marlin kernel
+- **对照**：HuggingFace transformers 4.51.3 + autoawq 0.2.9
+
+### 关键数据
+
+| 引擎 | 配置 | 吞吐量 | 显存 |
+|---|---|---|---|
+| HF transformers + AWQ | batch=1 | 26.38 tok/s | 5.24 GB |
+| vLLM + AWQ-Marlin | batch=1 | **98.59 tok/s** (P50) | 21.13 GB |
+| vLLM + AWQ-Marlin | batch=16 | **1439.47 tok/s** | 21.13 GB |
+
+**vLLM batch=16 vs HF transformers：54.6x 加速**
+
+### Charts
+
+![Throughput vs Batch Size](benchmarks/autodl_outputs/results/chart_throughput.png)
+
+![vLLM batch=16 vs HF transformers](benchmarks/autodl_outputs/results/chart_vllm_batch16_vs_hf.png)
+
+### 选型决策（面试可追问）
+
+曾尝试 RTX PRO 6000 Blackwell SM_120 失败 — vLLM 0.10.2 的 AWQ Marlin kernel 未编译该架构，GPU 0% / CPU fallback 0.1 tok/s。教训：选 GPU 不只看显存，软件栈兼容性同等重要。最终选 4090D Ada SM_89 — vLLM AWQ kernel 完整支持 + 价格 1/3。
+
 ## Quick Start
 
 ```bash

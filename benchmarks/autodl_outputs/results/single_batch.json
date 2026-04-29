@@ -1,0 +1,196 @@
+{
+  "test": "single_batch_30_queries",
+  "model": "Qwen2.5-7B-Instruct-AWQ",
+  "total_queries": 30,
+  "total_elapsed_s": 76.81,
+  "total_output_tokens": 7572,
+  "avg_tokens_per_s": 98.59,
+  "median_tokens_per_s": 98.58,
+  "p50_tokens_per_s": 98.58,
+  "p95_tokens_per_s": 99.57,
+  "p99_tokens_per_s": 99.82,
+  "min_tokens_per_s": 96.7,
+  "max_tokens_per_s": 99.82,
+  "per_query": [
+    {
+      "query_idx": 1,
+      "elapsed_s": 2.603,
+      "output_tokens": 256,
+      "tokens_per_s": 98.36
+    },
+    {
+      "query_idx": 2,
+      "elapsed_s": 2.6,
+      "output_tokens": 256,
+      "tokens_per_s": 98.45
+    },
+    {
+      "query_idx": 3,
+      "elapsed_s": 2.599,
+      "output_tokens": 256,
+      "tokens_per_s": 98.5
+    },
+    {
+      "query_idx": 4,
+      "elapsed_s": 2.591,
+      "output_tokens": 256,
+      "tokens_per_s": 98.79
+    },
+    {
+      "query_idx": 5,
+      "elapsed_s": 2.625,
+      "output_tokens": 256,
+      "tokens_per_s": 97.53
+    },
+    {
+      "query_idx": 6,
+      "elapsed_s": 2.647,
+      "output_tokens": 256,
+      "tokens_per_s": 96.7
+    },
+    {
+      "query_idx": 7,
+      "elapsed_s": 2.597,
+      "output_tokens": 256,
+      "tokens_per_s": 98.59
+    },
+    {
+      "query_idx": 8,
+      "elapsed_s": 2.614,
+      "output_tokens": 256,
+      "tokens_per_s": 97.92
+    },
+    {
+      "query_idx": 9,
+      "elapsed_s": 2.603,
+      "output_tokens": 256,
+      "tokens_per_s": 98.34
+    },
+    {
+      "query_idx": 10,
+      "elapsed_s": 2.575,
+      "output_tokens": 256,
+      "tokens_per_s": 99.44
+    },
+    {
+      "query_idx": 11,
+      "elapsed_s": 2.624,
+      "output_tokens": 256,
+      "tokens_per_s": 97.56
+    },
+    {
+      "query_idx": 12,
+      "elapsed_s": 2.576,
+      "output_tokens": 256,
+      "tokens_per_s": 99.38
+    },
+    {
+      "query_idx": 13,
+      "elapsed_s": 2.583,
+      "output_tokens": 256,
+      "tokens_per_s": 99.09
+    },
+    {
+      "query_idx": 14,
+      "elapsed_s": 2.615,
+      "output_tokens": 256,
+      "tokens_per_s": 97.9
+    },
+    {
+      "query_idx": 15,
+      "elapsed_s": 2.615,
+      "output_tokens": 256,
+      "tokens_per_s": 97.92
+    },
+    {
+      "query_idx": 16,
+      "elapsed_s": 2.602,
+      "output_tokens": 256,
+      "tokens_per_s": 98.39
+    },
+    {
+      "query_idx": 17,
+      "elapsed_s": 2.573,
+      "output_tokens": 256,
+      "tokens_per_s": 99.48
+    },
+    {
+      "query_idx": 18,
+      "elapsed_s": 2.589,
+      "output_tokens": 256,
+      "tokens_per_s": 98.88
+    },
+    {
+      "query_idx": 19,
+      "elapsed_s": 2.335,
+      "output_tokens": 232,
+      "tokens_per_s": 99.36
+    },
+    {
+      "query_idx": 20,
+      "elapsed_s": 2.565,
+      "output_tokens": 256,
+      "tokens_per_s": 99.82
+    },
+    {
+      "query_idx": 21,
+      "elapsed_s": 2.572,
+      "output_tokens": 256,
+      "tokens_per_s": 99.52
+    },
+    {
+      "query_idx": 22,
+      "elapsed_s": 2.571,
+      "output_tokens": 256,
+      "tokens_per_s": 99.57
+    },
+    {
+      "query_idx": 23,
+      "elapsed_s": 2.573,
+      "output_tokens": 256,
+      "tokens_per_s": 99.5
+    },
+    {
+      "query_idx": 24,
+      "elapsed_s": 2.588,
+      "output_tokens": 256,
+      "tokens_per_s": 98.92
+    },
+    {
+      "query_idx": 25,
+      "elapsed_s": 2.588,
+      "output_tokens": 256,
+      "tokens_per_s": 98.92
+    },
+    {
+      "query_idx": 26,
+      "elapsed_s": 2.591,
+      "output_tokens": 256,
+      "tokens_per_s": 98.82
+    },
+    {
+      "query_idx": 27,
+      "elapsed_s": 1.745,
+      "output_tokens": 172,
+      "tokens_per_s": 98.57
+    },
+    {
+      "query_idx": 28,
+      "elapsed_s": 2.602,
+      "output_tokens": 256,
+      "tokens_per_s": 98.37
+    },
+    {
+      "query_idx": 29,
+      "elapsed_s": 2.633,
+      "output_tokens": 256,
+      "tokens_per_s": 97.23
+    },
+    {
+      "query_idx": 30,
+      "elapsed_s": 2.616,
+      "output_tokens": 256,
+      "tokens_per_s": 97.86
+    }
+  ]
+}

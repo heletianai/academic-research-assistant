@@ -1,0 +1,20 @@
+{
+  "date": "2026-04-29",
+  "gpu_name": "NVIDIA GeForce RTX 4090 D",
+  "gpu_memory_total_gb": 23.53,
+  "gpu_compute_capability": [
+    8,
+    9
+  ],
+  "cuda_version": "12.8",
+  "driver_version": "570.124.04",
+  "vllm_version": "0.10.2",
+  "torch_version": "2.8.0+cu128",
+  "transformers_version_for_baseline": "4.51.3",
+  "python_version": "3.12.3",
+  "model_id": "Qwen/Qwen2.5-7B-Instruct-AWQ",
+  "model_quantization": "awq_marlin",
+  "autodl_zone": "\u897f\u5317B\u533a / 649\u673a",
+  "autodl_image": "PyTorch 2.5.1 / Python 3.12 / CUDA 12.4 (\u5347\u7ea7\u5230 PyTorch 2.8.0+cu128)",
+  "note": "vLLM 0.10.2 \u8981\u6c42 torch 2.8.0\uff0c\u539f\u955c\u50cf 2.5.1 \u5347\u7ea7\uff1btransformers 4.51.3 \u7528\u4e8e autoawq baseline"
+}

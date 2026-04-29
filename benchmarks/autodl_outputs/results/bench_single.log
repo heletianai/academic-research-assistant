@@ -1,0 +1,40 @@
+[19:32:16] Bench 1: single batch, 30 queries
+Endpoint: http://localhost:8000/v1/chat/completions
+Warming up...
+  [ 1/30] 2.60s, 256 tok, 98.4 tok/s
+  [ 2/30] 2.60s, 256 tok, 98.4 tok/s
+  [ 3/30] 2.60s, 256 tok, 98.5 tok/s
+  [ 4/30] 2.59s, 256 tok, 98.8 tok/s
+  [ 5/30] 2.62s, 256 tok, 97.5 tok/s
+  [ 6/30] 2.65s, 256 tok, 96.7 tok/s
+  [ 7/30] 2.60s, 256 tok, 98.6 tok/s
+  [ 8/30] 2.61s, 256 tok, 97.9 tok/s
+  [ 9/30] 2.60s, 256 tok, 98.3 tok/s
+  [10/30] 2.57s, 256 tok, 99.4 tok/s
+  [11/30] 2.62s, 256 tok, 97.6 tok/s
+  [12/30] 2.58s, 256 tok, 99.4 tok/s
+  [13/30] 2.58s, 256 tok, 99.1 tok/s
+  [14/30] 2.61s, 256 tok, 97.9 tok/s
+  [15/30] 2.61s, 256 tok, 97.9 tok/s
+  [16/30] 2.60s, 256 tok, 98.4 tok/s
+  [17/30] 2.57s, 256 tok, 99.5 tok/s
+  [18/30] 2.59s, 256 tok, 98.9 tok/s
+  [19/30] 2.33s, 232 tok, 99.4 tok/s
+  [20/30] 2.56s, 256 tok, 99.8 tok/s
+  [21/30] 2.57s, 256 tok, 99.5 tok/s
+  [22/30] 2.57s, 256 tok, 99.6 tok/s
+  [23/30] 2.57s, 256 tok, 99.5 tok/s
+  [24/30] 2.59s, 256 tok, 98.9 tok/s
+  [25/30] 2.59s, 256 tok, 98.9 tok/s
+  [26/30] 2.59s, 256 tok, 98.8 tok/s
+  [27/30] 1.74s, 172 tok, 98.6 tok/s
+  [28/30] 2.60s, 256 tok, 98.4 tok/s
+  [29/30] 2.63s, 256 tok, 97.2 tok/s
+  [30/30] 2.62s, 256 tok, 97.9 tok/s
+
+=== Summary ===
+Avg: 98.59 tok/s
+P50: 98.58 tok/s
+P95: 99.57 tok/s
+Total: 7572 tokens in 76.8s
+Saved: /root/autodl-tmp/benchmark/results/single_batch.json

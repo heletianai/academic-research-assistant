@@ -1,0 +1,86 @@
+{
+  "test": "transformers_baseline",
+  "framework": "huggingface_transformers",
+  "model": "/root/autodl-tmp/models/Qwen2.5-7B-Instruct-AWQ",
+  "model_dtype": "AWQ weights, runtime fp16",
+  "total_queries": 10,
+  "load_time_s": 5.41,
+  "total_output_tokens": 2560,
+  "avg_tokens_per_s": 26.38,
+  "median_tokens_per_s": 26.89,
+  "min_tokens_per_s": 21.72,
+  "max_tokens_per_s": 27.01,
+  "gpu_memory_peak_gb": 5.24,
+  "per_query": [
+    {
+      "query_idx": 1,
+      "input_tokens": 38,
+      "output_tokens": 256,
+      "elapsed_s": 11.786,
+      "tokens_per_s": 21.72
+    },
+    {
+      "query_idx": 2,
+      "input_tokens": 40,
+      "output_tokens": 256,
+      "elapsed_s": 9.542,
+      "tokens_per_s": 26.83
+    },
+    {
+      "query_idx": 3,
+      "input_tokens": 38,
+      "output_tokens": 256,
+      "elapsed_s": 9.565,
+      "tokens_per_s": 26.77
+    },
+    {
+      "query_idx": 4,
+      "input_tokens": 39,
+      "output_tokens": 256,
+      "elapsed_s": 9.55,
+      "tokens_per_s": 26.8
+    },
+    {
+      "query_idx": 5,
+      "input_tokens": 37,
+      "output_tokens": 256,
+      "elapsed_s": 9.49,
+      "tokens_per_s": 26.98
+    },
+    {
+      "query_idx": 6,
+      "input_tokens": 40,
+      "output_tokens": 256,
+      "elapsed_s": 9.537,
+      "tokens_per_s": 26.84
+    },
+    {
+      "query_idx": 7,
+      "input_tokens": 41,
+      "output_tokens": 256,
+      "elapsed_s": 9.501,
+      "tokens_per_s": 26.94
+    },
+    {
+      "query_idx": 8,
+      "input_tokens": 43,
+      "output_tokens": 256,
+      "elapsed_s": 9.493,
+      "tokens_per_s": 26.97
+    },
+    {
+      "query_idx": 9,
+      "input_tokens": 41,
+      "output_tokens": 256,
+      "elapsed_s": 9.484,
+      "tokens_per_s": 26.99
+    },
+    {
+      "query_idx": 10,
+      "input_tokens": 39,
+      "output_tokens": 256,
+      "elapsed_s": 9.478,
+      "tokens_per_s": 27.01
+    }
+  ]
+}

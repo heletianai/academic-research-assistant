@@ -1,0 +1,50 @@
+Sliding Window Attention is enabled but not implemented for `sdpa`; unexpected results may be encountered.
+/root/miniconda3/lib/python3.12/site-packages/awq/__init__.py:21: DeprecationWarning: 
+I have left this message as the final dev message to help you transition.
+
+Important Notice:
+- AutoAWQ is officially deprecated and will no longer be maintained.
+- The last tested configuration used Torch 2.6.0 and Transformers 4.51.3.
+- If future versions of Transformers break AutoAWQ compatibility, please report the issue to the Transformers project.
+
+Alternative:
+- AutoAWQ has been adopted by the vLLM Project: https://github.com/vllm-project/llm-compressor
+
+For further inquiries, feel free to reach out:
+- X: https://x.com/casper_hansen_
+- LinkedIn: https://www.linkedin.com/in/casper-hansen-804005170/
+
+  warnings.warn(_FINAL_DEV_MESSAGE, category=DeprecationWarning, stacklevel=1)
+[19:38:06] Bench 3: transformers + AWQ baseline
+Model: /root/autodl-tmp/models/Qwen2.5-7B-Instruct-AWQ
+Loading model...
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.50s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.06it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.03s/it]
+/root/miniconda3/lib/python3.12/site-packages/transformers/generation/configuration_utils.py:631: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.7` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+/root/miniconda3/lib/python3.12/site-packages/transformers/generation/configuration_utils.py:636: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.8` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/root/miniconda3/lib/python3.12/site-packages/transformers/generation/configuration_utils.py:653: UserWarning: `do_sample` is set to `False`. However, `top_k` is set to `20` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_k`.
+  warnings.warn(
+The attention mask is not set and cannot be inferred from input because pad token is same as eos token. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+/root/miniconda3/lib/python3.12/site-packages/transformers/generation/configuration_utils.py:631: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.7` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+/root/miniconda3/lib/python3.12/site-packages/transformers/generation/configuration_utils.py:636: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.8` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/root/miniconda3/lib/python3.12/site-packages/transformers/generation/configuration_utils.py:653: UserWarning: `do_sample` is set to `False`. However, `top_k` is set to `20` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_k`.
+  warnings.warn(
+Loaded in 5.4s
+GPU mem: 5.21GB
+Running queries...
+  [ 1/10] 11.79s, 256 tok, 21.7 tok/s
+  [ 2/10] 9.54s, 256 tok, 26.8 tok/s
+  [ 3/10] 9.56s, 256 tok, 26.8 tok/s
+  [ 4/10] 9.55s, 256 tok, 26.8 tok/s
+  [ 5/10] 9.49s, 256 tok, 27.0 tok/s
+  [ 6/10] 9.54s, 256 tok, 26.8 tok/s
+  [ 7/10] 9.50s, 256 tok, 26.9 tok/s
+  [ 8/10] 9.49s, 256 tok, 27.0 tok/s
+  [ 9/10] 9.48s, 256 tok, 27.0 tok/s
+  [10/10] 9.48s, 256 tok, 27.0 tok/s
+
+Avg: 26.38 tok/s, GPU peak: 5.24 GB
+Saved: /root/autodl-tmp/benchmark/results/transformers_baseline.json
