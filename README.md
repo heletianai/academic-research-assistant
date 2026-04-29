@@ -95,7 +95,7 @@ python -m vllm.entrypoints.openai.api_server \
 
 完整部署命令 / 依赖陷阱 / 4 道验证关卡：[benchmarks/autodl_outputs/README.md](benchmarks/autodl_outputs/README.md)
 
-### 选型决策（面试可追问）
+### 选型决策
 
 曾尝试 RTX PRO 6000 Blackwell SM_120 失败 — vLLM 0.10.2 的 AWQ Marlin kernel 未编译该架构，GPU 0% / CPU fallback 0.1 tok/s。教训：选 GPU 不只看显存，软件栈兼容性同等重要。最终选 4090D Ada SM_89 — vLLM AWQ kernel 完整支持 + 价格 1/3。
 
