@@ -75,6 +75,26 @@ Generation quality evaluated via LLM-as-Judge (Faithfulness + Relevancy).
 
 ![vLLM batch=16 vs HF transformers](benchmarks/autodl_outputs/results/chart_vllm_batch16_vs_hf.png)
 
+### 部署说明
+
+```bash
+# 环境：AutoDL RTX 4090D / 驱动 ≥ 550 / 镜像 PyTorch 2.5.1 + CUDA 12.4
+# vLLM 0.10.2 强制 torch 2.8.0，cu124 wheel 无 2.8.0，必须切 cu128
+pip install "vllm==0.10.2" --no-deps
+pip install torch==2.8.0 torchvision==0.23.0 torchaudio==2.8.0 \
+  --index-url https://download.pytorch.org/whl/cu128
+pip install xformers==0.0.32.post1 transformers==4.51.3  # autoawq 0.2.9 兼容
+
+# 启动 vLLM OpenAI-compatible API server
+python -m vllm.entrypoints.openai.api_server \
+  --model Qwen/Qwen2.5-7B-Instruct-AWQ \
+  --quantization awq_marlin --dtype half \
+  --max-model-len 4096 --gpu-memory-utilization 0.85 \
+  --enforce-eager
+```
+
+完整部署命令 / 依赖陷阱 / 4 道验证关卡：[benchmarks/autodl_outputs/README.md](benchmarks/autodl_outputs/README.md)
+
 ### 选型决策（面试可追问）
 
 曾尝试 RTX PRO 6000 Blackwell SM_120 失败 — vLLM 0.10.2 的 AWQ Marlin kernel 未编译该架构，GPU 0% / CPU fallback 0.1 tok/s。教训：选 GPU 不只看显存，软件栈兼容性同等重要。最终选 4090D Ada SM_89 — vLLM AWQ kernel 完整支持 + 价格 1/3。
