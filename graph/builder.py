@@ -10,7 +10,8 @@ from langgraph.checkpoint.sqlite import SqliteSaver
 from langgraph.graph import END, START, StateGraph
 from loguru import logger
 
-from config.settings import CHECKPOINT_DB
+# 注意：导入 settings 触发 LangSmith 环境变量同步（必须在 langchain 调用前执行）
+from config.settings import CHECKPOINT_DB, LANGSMITH_TRACING, LANGSMITH_PROJECT
 from graph.nodes import (
     chitchat_node,
     human_confirm_node,

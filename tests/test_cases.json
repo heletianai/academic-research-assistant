@@ -1,122 +1,1001 @@
 [
   {
     "query": "What is self-attention mechanism?",
-    "expected_keywords": ["attention", "query", "key", "value", "softmax"]
+    "expected_keywords": [
+      "attention",
+      "query",
+      "key",
+      "value",
+      "softmax"
+    ]
   },
   {
     "query": "How does retrieval augmented generation work?",
-    "expected_keywords": ["retrieval", "generation", "document", "knowledge"]
+    "expected_keywords": [
+      "retrieval",
+      "generation",
+      "document",
+      "knowledge"
+    ]
   },
   {
     "query": "What is the transformer architecture?",
-    "expected_keywords": ["attention", "encoder", "decoder", "layer", "multi-head"]
+    "expected_keywords": [
+      "attention",
+      "encoder",
+      "decoder",
+      "layer",
+      "multi-head"
+    ]
   },
   {
     "query": "Explain the BERT model",
-    "expected_keywords": ["bidirectional", "encoder", "pre-training", "masking", "token"]
+    "expected_keywords": [
+      "bidirectional",
+      "encoder",
+      "pre-training",
+      "masking",
+      "token"
+    ]
   },
   {
     "query": "What is prompt engineering?",
-    "expected_keywords": ["prompt", "instruction", "few-shot", "zero-shot", "template"]
+    "expected_keywords": [
+      "prompt",
+      "instruction",
+      "few-shot",
+      "zero-shot",
+      "template"
+    ]
   },
   {
     "query": "How does fine-tuning work for large language models?",
-    "expected_keywords": ["fine-tuning", "training", "parameter", "gradient", "loss"]
+    "expected_keywords": [
+      "fine-tuning",
+      "training",
+      "parameter",
+      "gradient",
+      "loss"
+    ]
   },
   {
     "query": "What is the difference between encoder and decoder in transformers?",
-    "expected_keywords": ["encoder", "decoder", "attention", "autoregressive", "bidirectional"]
+    "expected_keywords": [
+      "encoder",
+      "decoder",
+      "attention",
+      "autoregressive",
+      "bidirectional"
+    ]
   },
   {
     "query": "Explain chain-of-thought prompting",
-    "expected_keywords": ["chain", "thought", "reasoning", "step", "intermediate"]
+    "expected_keywords": [
+      "chain",
+      "thought",
+      "reasoning",
+      "step",
+      "intermediate"
+    ]
   },
   {
     "query": "What is vector similarity search?",
-    "expected_keywords": ["vector", "embedding", "similarity", "cosine", "distance"]
+    "expected_keywords": [
+      "vector",
+      "embedding",
+      "similarity",
+      "cosine",
+      "distance"
+    ]
   },
   {
     "query": "How does BM25 ranking algorithm work?",
-    "expected_keywords": ["term", "frequency", "document", "inverse", "score"]
+    "expected_keywords": [
+      "term",
+      "frequency",
+      "document",
+      "inverse",
+      "score"
+    ]
   },
   {
     "query": "What is LoRA and how does it reduce training cost?",
-    "expected_keywords": ["low-rank", "adaptation", "parameter", "efficient", "matrix"]
+    "expected_keywords": [
+      "low-rank",
+      "adaptation",
+      "parameter",
+      "efficient",
+      "matrix"
+    ]
   },
   {
     "query": "Explain the concept of knowledge distillation",
-    "expected_keywords": ["teacher", "student", "distill", "soft", "logit"]
+    "expected_keywords": [
+      "teacher",
+      "student",
+      "distill",
+      "soft",
+      "logit"
+    ]
   },
   {
     "query": "How does reinforcement learning from human feedback work?",
-    "expected_keywords": ["reward", "human", "preference", "policy", "feedback"]
+    "expected_keywords": [
+      "reward",
+      "human",
+      "preference",
+      "policy",
+      "feedback"
+    ]
   },
   {
     "query": "What is the role of positional encoding in transformers?",
-    "expected_keywords": ["position", "encoding", "sinusoidal", "sequence", "order"]
+    "expected_keywords": [
+      "position",
+      "encoding",
+      "sinusoidal",
+      "sequence",
+      "order"
+    ]
   },
   {
     "query": "Explain the GPT model architecture",
-    "expected_keywords": ["generative", "pre-training", "autoregressive", "decoder", "language"]
+    "expected_keywords": [
+      "generative",
+      "pre-training",
+      "autoregressive",
+      "decoder",
+      "language"
+    ]
   },
   {
     "query": "What is in-context learning?",
-    "expected_keywords": ["context", "learning", "example", "demonstration", "prompt"]
+    "expected_keywords": [
+      "context",
+      "learning",
+      "example",
+      "demonstration",
+      "prompt"
+    ]
   },
   {
     "query": "How does multi-head attention improve model performance?",
-    "expected_keywords": ["head", "attention", "subspace", "parallel", "representation"]
+    "expected_keywords": [
+      "head",
+      "attention",
+      "subspace",
+      "parallel",
+      "representation"
+    ]
   },
   {
     "query": "What are the differences between word2vec and transformer embeddings?",
-    "expected_keywords": ["word2vec", "embedding", "contextual", "static", "representation"]
+    "expected_keywords": [
+      "word2vec",
+      "embedding",
+      "contextual",
+      "static",
+      "representation"
+    ]
   },
   {
     "query": "Explain the concept of attention masking",
-    "expected_keywords": ["mask", "attention", "causal", "padding", "sequence"]
+    "expected_keywords": [
+      "mask",
+      "attention",
+      "causal",
+      "padding",
+      "sequence"
+    ]
   },
   {
     "query": "What is the mixture of experts architecture?",
-    "expected_keywords": ["expert", "router", "gating", "sparse", "capacity"]
+    "expected_keywords": [
+      "expert",
+      "router",
+      "gating",
+      "sparse",
+      "capacity"
+    ]
   },
   {
     "query": "How does DPO differ from RLHF?",
-    "expected_keywords": ["direct", "preference", "optimization", "reward", "policy"]
+    "expected_keywords": [
+      "direct",
+      "preference",
+      "optimization",
+      "reward",
+      "policy"
+    ]
   },
   {
     "query": "What is flash attention and why is it faster?",
-    "expected_keywords": ["flash", "attention", "memory", "tiling", "io"]
+    "expected_keywords": [
+      "flash",
+      "attention",
+      "memory",
+      "tiling",
+      "io"
+    ]
   },
   {
     "query": "Explain the concept of hallucination in large language models",
-    "expected_keywords": ["hallucination", "factual", "generation", "grounding", "accuracy"]
+    "expected_keywords": [
+      "hallucination",
+      "factual",
+      "generation",
+      "grounding",
+      "accuracy"
+    ]
   },
   {
     "query": "What is KV cache in transformer inference?",
-    "expected_keywords": ["key", "value", "cache", "inference", "decoding"]
+    "expected_keywords": [
+      "key",
+      "value",
+      "cache",
+      "inference",
+      "decoding"
+    ]
   },
   {
     "query": "How does the cross-encoder reranker work?",
-    "expected_keywords": ["cross", "encoder", "rerank", "relevance", "score"]
+    "expected_keywords": [
+      "cross",
+      "encoder",
+      "rerank",
+      "relevance",
+      "score"
+    ]
   },
   {
     "query": "What is the difference between sparse and dense retrieval?",
-    "expected_keywords": ["sparse", "dense", "retrieval", "embedding", "lexical"]
+    "expected_keywords": [
+      "sparse",
+      "dense",
+      "retrieval",
+      "embedding",
+      "lexical"
+    ]
   },
   {
     "query": "Explain the concept of tokenization in NLP",
-    "expected_keywords": ["token", "subword", "vocabulary", "bpe", "encoding"]
+    "expected_keywords": [
+      "token",
+      "subword",
+      "vocabulary",
+      "bpe",
+      "encoding"
+    ]
   },
   {
     "query": "What is the role of layer normalization in transformers?",
-    "expected_keywords": ["layer", "normalization", "mean", "variance", "stability"]
+    "expected_keywords": [
+      "layer",
+      "normalization",
+      "mean",
+      "variance",
+      "stability"
+    ]
   },
   {
     "query": "How does beam search decoding work?",
-    "expected_keywords": ["beam", "search", "decoding", "probability", "sequence"]
+    "expected_keywords": [
+      "beam",
+      "search",
+      "decoding",
+      "probability",
+      "sequence"
+    ]
   },
   {
     "query": "What is the scaling law for large language models?",
-    "expected_keywords": ["scaling", "parameter", "compute", "data", "performance"]
+    "expected_keywords": [
+      "scaling",
+      "parameter",
+      "compute",
+      "data",
+      "performance"
+    ]
+  },
+  {
+    "query": "How does ReAct combine reasoning and acting in LLM agents?",
+    "expected_keywords": [
+      "reason",
+      "act",
+      "thought",
+      "observation",
+      "tool"
+    ]
+  },
+  {
+    "query": "What is the Reflexion framework for self-improving LLM agents?",
+    "expected_keywords": [
+      "reflexion",
+      "self",
+      "improve",
+      "trajectory",
+      "memory"
+    ]
+  },
+  {
+    "query": "Explain Plan-and-Execute agent architecture",
+    "expected_keywords": [
+      "plan",
+      "execute",
+      "decompose",
+      "subtask",
+      "executor"
+    ]
+  },
+  {
+    "query": "How do multi-agent debate systems reduce LLM hallucination?",
+    "expected_keywords": [
+      "debate",
+      "multi-agent",
+      "hallucination",
+      "consensus",
+      "verify"
+    ]
+  },
+  {
+    "query": "What is the AutoGen framework for multi-agent collaboration?",
+    "expected_keywords": [
+      "autogen",
+      "multi-agent",
+      "collaboration",
+      "conversation",
+      "role"
+    ]
+  },
+  {
+    "query": "How does LangGraph differ from LangChain for stateful agents?",
+    "expected_keywords": [
+      "langgraph",
+      "state",
+      "graph",
+      "node",
+      "checkpoint"
+    ]
+  },
+  {
+    "query": "What is the role of memory in LLM agent design?",
+    "expected_keywords": [
+      "memory",
+      "short-term",
+      "long-term",
+      "retrieval",
+      "context"
+    ]
+  },
+  {
+    "query": "How do tool-calling LLMs select the right tool?",
+    "expected_keywords": [
+      "tool",
+      "function",
+      "call",
+      "schema",
+      "decision"
+    ]
+  },
+  {
+    "query": "What is Tree of Thoughts (ToT) prompting?",
+    "expected_keywords": [
+      "tree",
+      "thought",
+      "search",
+      "branch",
+      "evaluate"
+    ]
+  },
+  {
+    "query": "How does Self-Refine improve LLM output quality?",
+    "expected_keywords": [
+      "self-refine",
+      "feedback",
+      "iterate",
+      "critique",
+      "revise"
+    ]
+  },
+  {
+    "query": "What is CRAG and how does it improve retrieval reliability?",
+    "expected_keywords": [
+      "crag",
+      "corrective",
+      "retrieval",
+      "grading",
+      "fallback"
+    ]
+  },
+  {
+    "query": "Explain Self-RAG and adaptive retrieval mechanisms",
+    "expected_keywords": [
+      "self-rag",
+      "adaptive",
+      "reflection",
+      "retrieve",
+      "critique"
+    ]
+  },
+  {
+    "query": "How does HyDE improve retrieval with hypothetical documents?",
+    "expected_keywords": [
+      "hyde",
+      "hypothetical",
+      "document",
+      "embedding",
+      "retrieve"
+    ]
+  },
+  {
+    "query": "What is GraphRAG and when is it better than vanilla RAG?",
+    "expected_keywords": [
+      "graphrag",
+      "graph",
+      "entity",
+      "community",
+      "summary"
+    ]
+  },
+  {
+    "query": "How does query expansion improve retrieval recall?",
+    "expected_keywords": [
+      "query",
+      "expansion",
+      "synonym",
+      "rewrite",
+      "recall"
+    ]
+  },
+  {
+    "query": "Explain the RAG-Fusion technique with reciprocal rank fusion",
+    "expected_keywords": [
+      "rag-fusion",
+      "rrf",
+      "reciprocal",
+      "rank",
+      "fusion"
+    ]
+  },
+  {
+    "query": "What are the key metrics for evaluating RAG systems?",
+    "expected_keywords": [
+      "faithfulness",
+      "relevance",
+      "precision",
+      "ragas",
+      "metric"
+    ]
+  },
+  {
+    "query": "How does RAGAs framework evaluate RAG quality?",
+    "expected_keywords": [
+      "ragas",
+      "faithfulness",
+      "answer",
+      "context",
+      "evaluate"
+    ]
+  },
+  {
+    "query": "What is contextual compression in retrieval pipelines?",
+    "expected_keywords": [
+      "compression",
+      "context",
+      "filter",
+      "rerank",
+      "relevant"
+    ]
+  },
+  {
+    "query": "How do parent-child chunking strategies work in RAG?",
+    "expected_keywords": [
+      "parent",
+      "child",
+      "chunk",
+      "hierarchical",
+      "context"
+    ]
+  },
+  {
+    "query": "How does vLLM achieve high throughput with PagedAttention?",
+    "expected_keywords": [
+      "vllm",
+      "paged",
+      "attention",
+      "kv",
+      "throughput"
+    ]
+  },
+  {
+    "query": "What is continuous batching in LLM serving?",
+    "expected_keywords": [
+      "continuous",
+      "batching",
+      "serving",
+      "throughput",
+      "schedule"
+    ]
+  },
+  {
+    "query": "Explain Flash Attention and its memory savings",
+    "expected_keywords": [
+      "flash",
+      "attention",
+      "memory",
+      "tile",
+      "io"
+    ]
+  },
+  {
+    "query": "What is Speculative Decoding and how does it speed up inference?",
+    "expected_keywords": [
+      "speculative",
+      "decoding",
+      "draft",
+      "verify",
+      "speedup"
+    ]
+  },
+  {
+    "query": "How does AWQ quantization compare to GPTQ?",
+    "expected_keywords": [
+      "awq",
+      "gptq",
+      "quantization",
+      "weight",
+      "activation"
+    ]
+  },
+  {
+    "query": "What is Medusa decoding for LLM acceleration?",
+    "expected_keywords": [
+      "medusa",
+      "head",
+      "decoding",
+      "parallel",
+      "speedup"
+    ]
+  },
+  {
+    "query": "Explain KV cache optimization techniques",
+    "expected_keywords": [
+      "kv",
+      "cache",
+      "memory",
+      "reuse",
+      "prefix"
+    ]
+  },
+  {
+    "query": "How does grouped-query attention reduce memory?",
+    "expected_keywords": [
+      "grouped",
+      "query",
+      "attention",
+      "gqa",
+      "memory"
+    ]
+  },
+  {
+    "query": "What is Multi-Query Attention (MQA)?",
+    "expected_keywords": [
+      "multi-query",
+      "mqa",
+      "shared",
+      "head",
+      "attention"
+    ]
+  },
+  {
+    "query": "How does quantization-aware training preserve accuracy?",
+    "expected_keywords": [
+      "quantization",
+      "aware",
+      "training",
+      "qat",
+      "accuracy"
+    ]
+  },
+  {
+    "query": "How does QLoRA reduce memory for large model fine-tuning?",
+    "expected_keywords": [
+      "qlora",
+      "quantize",
+      "lora",
+      "memory",
+      "4-bit"
+    ]
+  },
+  {
+    "query": "What is the difference between LoRA and full fine-tuning?",
+    "expected_keywords": [
+      "lora",
+      "full",
+      "fine-tuning",
+      "rank",
+      "parameter"
+    ]
+  },
+  {
+    "query": "Explain Direct Preference Optimization (DPO) for RLHF",
+    "expected_keywords": [
+      "dpo",
+      "preference",
+      "optimization",
+      "rlhf",
+      "policy"
+    ]
+  },
+  {
+    "query": "How does GRPO differ from PPO in RLHF training?",
+    "expected_keywords": [
+      "grpo",
+      "ppo",
+      "rlhf",
+      "policy",
+      "advantage"
+    ]
+  },
+  {
+    "query": "What is supervised fine-tuning (SFT) and when to use it?",
+    "expected_keywords": [
+      "sft",
+      "supervised",
+      "fine-tuning",
+      "instruction",
+      "demonstration"
+    ]
+  },
+  {
+    "query": "How does adapter-based parameter-efficient fine-tuning work?",
+    "expected_keywords": [
+      "adapter",
+      "peft",
+      "parameter",
+      "efficient",
+      "freeze"
+    ]
+  },
+  {
+    "query": "What is RLAIF and how does it scale RLHF?",
+    "expected_keywords": [
+      "rlaif",
+      "ai",
+      "feedback",
+      "rlhf",
+      "scale"
+    ]
+  },
+  {
+    "query": "Explain prefix tuning vs prompt tuning",
+    "expected_keywords": [
+      "prefix",
+      "prompt",
+      "tuning",
+      "soft",
+      "embed"
+    ]
+  },
+  {
+    "query": "What is Mixture of Experts (MoE) in modern LLMs?",
+    "expected_keywords": [
+      "moe",
+      "expert",
+      "router",
+      "sparse",
+      "gating"
+    ]
+  },
+  {
+    "query": "How does DeepSeek MoE achieve fine-grained expert specialization?",
+    "expected_keywords": [
+      "deepseek",
+      "moe",
+      "expert",
+      "specialization",
+      "router"
+    ]
+  },
+  {
+    "query": "What is the Mamba state space model architecture?",
+    "expected_keywords": [
+      "mamba",
+      "state",
+      "space",
+      "selective",
+      "ssm"
+    ]
+  },
+  {
+    "query": "How does RWKV combine RNN and Transformer benefits?",
+    "expected_keywords": [
+      "rwkv",
+      "rnn",
+      "transformer",
+      "linear",
+      "attention"
+    ]
+  },
+  {
+    "query": "What is YaRN for extending LLM context window?",
+    "expected_keywords": [
+      "yarn",
+      "rope",
+      "context",
+      "extend",
+      "extrapolate"
+    ]
+  },
+  {
+    "query": "How does Rotary Position Embedding (RoPE) work?",
+    "expected_keywords": [
+      "rope",
+      "rotary",
+      "position",
+      "embedding",
+      "rotation"
+    ]
+  },
+  {
+    "query": "What is the role of position interpolation for long context?",
+    "expected_keywords": [
+      "position",
+      "interpolation",
+      "long",
+      "context",
+      "rope"
+    ]
+  },
+  {
+    "query": "How does Sliding Window Attention enable long sequences?",
+    "expected_keywords": [
+      "sliding",
+      "window",
+      "attention",
+      "local",
+      "long"
+    ]
+  },
+  {
+    "query": "What is Chain-of-Thought prompting and why does it work?",
+    "expected_keywords": [
+      "chain",
+      "thought",
+      "reasoning",
+      "step",
+      "intermediate"
+    ]
+  },
+  {
+    "query": "How does Self-Consistency improve CoT reasoning?",
+    "expected_keywords": [
+      "self-consistency",
+      "vote",
+      "sample",
+      "reason",
+      "agree"
+    ]
+  },
+  {
+    "query": "What is the Reasoning-via-Planning paradigm?",
+    "expected_keywords": [
+      "reasoning",
+      "planning",
+      "decompose",
+      "search",
+      "execute"
+    ]
+  },
+  {
+    "query": "How do o1-style reasoning models differ from standard LLMs?",
+    "expected_keywords": [
+      "o1",
+      "reasoning",
+      "thinking",
+      "compute",
+      "test-time"
+    ]
+  },
+  {
+    "query": "What is process supervision in math reasoning?",
+    "expected_keywords": [
+      "process",
+      "supervision",
+      "step",
+      "reward",
+      "math"
+    ]
+  },
+  {
+    "query": "How does program-aided language models (PAL) help reasoning?",
+    "expected_keywords": [
+      "pal",
+      "program",
+      "code",
+      "reasoning",
+      "execute"
+    ]
+  },
+  {
+    "query": "What is constitutional AI and how does it improve alignment?",
+    "expected_keywords": [
+      "constitutional",
+      "ai",
+      "principle",
+      "self-critique",
+      "alignment"
+    ]
+  },
+  {
+    "query": "How does RLHF align LLMs with human preferences?",
+    "expected_keywords": [
+      "rlhf",
+      "reward",
+      "preference",
+      "alignment",
+      "human"
+    ]
+  },
+  {
+    "query": "What are common LLM jailbreak techniques?",
+    "expected_keywords": [
+      "jailbreak",
+      "prompt",
+      "attack",
+      "bypass",
+      "safety"
+    ]
+  },
+  {
+    "query": "How do red-teaming methods evaluate LLM safety?",
+    "expected_keywords": [
+      "red",
+      "team",
+      "adversarial",
+      "safety",
+      "test"
+    ]
+  },
+  {
+    "query": "What is the alignment tax in RLHF training?",
+    "expected_keywords": [
+      "alignment",
+      "tax",
+      "performance",
+      "trade-off",
+      "rlhf"
+    ]
+  },
+  {
+    "query": "How does instruction tuning improve LLM helpfulness?",
+    "expected_keywords": [
+      "instruction",
+      "tuning",
+      "help",
+      "follow",
+      "task"
+    ]
+  },
+  {
+    "query": "What is MMLU and how does it benchmark LLM knowledge?",
+    "expected_keywords": [
+      "mmlu",
+      "benchmark",
+      "multiple",
+      "choice",
+      "knowledge"
+    ]
+  },
+  {
+    "query": "How does HumanEval measure code generation ability?",
+    "expected_keywords": [
+      "humaneval",
+      "code",
+      "function",
+      "test",
+      "pass"
+    ]
+  },
+  {
+    "query": "What is GSM8K for evaluating math reasoning?",
+    "expected_keywords": [
+      "gsm8k",
+      "math",
+      "grade",
+      "school",
+      "reasoning"
+    ]
+  },
+  {
+    "query": "How does GEval improve LLM-as-judge evaluation?",
+    "expected_keywords": [
+      "geval",
+      "judge",
+      "cot",
+      "criteria",
+      "score"
+    ]
+  },
+  {
+    "query": "What is MT-Bench and how does it evaluate chat models?",
+    "expected_keywords": [
+      "mt-bench",
+      "multi-turn",
+      "chat",
+      "judge",
+      "compare"
+    ]
+  },
+  {
+    "query": "How does Chatbot Arena rank LLMs via human preference?",
+    "expected_keywords": [
+      "arena",
+      "chatbot",
+      "elo",
+      "preference",
+      "battle"
+    ]
+  },
+  {
+    "query": "What is the Model Context Protocol (MCP) by Anthropic?",
+    "expected_keywords": [
+      "mcp",
+      "protocol",
+      "context",
+      "tool",
+      "anthropic"
+    ]
+  },
+  {
+    "query": "How does LangSmith provide observability for LLM apps?",
+    "expected_keywords": [
+      "langsmith",
+      "trace",
+      "observability",
+      "debug",
+      "monitor"
+    ]
+  },
+  {
+    "query": "What is the role of vector databases in RAG systems?",
+    "expected_keywords": [
+      "vector",
+      "database",
+      "embedding",
+      "search",
+      "retrieve"
+    ]
+  },
+  {
+    "query": "How does FAISS enable fast similarity search?",
+    "expected_keywords": [
+      "faiss",
+      "ann",
+      "similarity",
+      "index",
+      "search"
+    ]
+  },
+  {
+    "query": "What is the OpenAI Function Calling spec?",
+    "expected_keywords": [
+      "function",
+      "calling",
+      "json",
+      "schema",
+      "tool"
+    ]
+  },
+  {
+    "query": "How do streaming APIs improve LLM user experience?",
+    "expected_keywords": [
+      "stream",
+      "token",
+      "ux",
+      "latency",
+      "chunk"
+    ]
   }
 ]

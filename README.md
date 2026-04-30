@@ -29,7 +29,7 @@ User Query
 
 ## Evaluation Results
 
-30 test queries, 4-group ablation study:
+### Retrieval (4-group ablation, 30 test queries)
 
 | Method | Hit@3 | Hit@5 | MRR |
 |--------|-------|-------|-----|
@@ -38,14 +38,60 @@ User Query
 | Hybrid (RRF) | 90.0% | 96.7% | 0.819 |
 | **Hybrid + Reranker** | **93.3%** | **93.3%** | **0.917** |
 
-Generation quality evaluated via LLM-as-Judge (Faithfulness + Relevancy).
+### Generation Quality (3-tier evaluation system, 100 test queries)
+
+**Tier 1 — LLM-as-Judge** (legacy)
+- Faithfulness + Relevancy 2 维 baseline 评分
+
+**Tier 2 — RAGAs 0.4 Standard Metrics** (`tests/evaluate_ragas.py`)
+- 自动 statement-level claim 拆分 → 逐条对照 retrieved context
+- Faithfulness / Answer Relevancy / Context Precision 三指标
+- AnswerRelevancy 用 query reconstruction + sentence-transformers embedding 余弦相似度（不仅 LLM 直接打分）
+
+**Tier 3 — GEval CoT Multi-Sample** (`tests/evaluate_geval.py`)
+- 4 维评分（Faithfulness / Relevance / Coherence / Conciseness）
+- Chain-of-Thought prompt：评分前先 step-by-step 推理 + 引用 evidence
+- 多次采样（n=3）取均值降方差 ~30%
+
+跑法：
+```bash
+python -m tests.evaluate_retrieval   # Hit@K + MRR + 4 组 ablation
+python -m tests.evaluate_ragas       # RAGAs 三指标，输出 benchmarks/ragas_results.{json,md}
+python -m tests.evaluate_geval       # GEval CoT 4 维 × 3 samples
+```
+
+## Observability (LangSmith)
+
+全链路 trace + cost / latency / error rate dashboard，集成 https://smith.langchain.com。
+
+```bash
+# 在 .env 配置
+LANGSMITH_TRACING=true
+LANGSMITH_API_KEY=lsv2_pt_xxxx
+LANGSMITH_PROJECT=academic-research-assistant
+```
+
+启用后每次 query 自动上传完整 graph trace（5 层调用：query_rewrite → intent_classify → rag → retrieve → generate）。截图见 [docs/screenshots/langsmith/](docs/screenshots/langsmith/)。
+
+![LangSmith Trace Tree](docs/screenshots/langsmith/02_trace_tree_expanded.png)
+
+## LLM Provider Switching
+
+`.env` 设 `LLM_PROVIDER` 在两个 provider 间切换（embeddings 始终用 OpenRouter，因为 FAISS index 已构建好）：
+
+| Provider | Chat Model | 价格 | Embedding |
+|---|---|---|---|
+| zhipu (默认) | `glm-4-flash` | **完全免费** | OpenRouter `text-embedding-3-small` |
+| openrouter | `deepseek/deepseek-chat` | ~$0.10/M token | OpenRouter `text-embedding-3-small` |
 
 ## Tech Stack
 
-- **Framework**: LangGraph, LangChain
-- **LLM**: DeepSeek (via OpenRouter)
-- **Retrieval**: FAISS, BM25 (rank_bm25), CrossEncoder (ms-marco-MiniLM-L-6-v2)
-- **MCP**: FastMCP
+- **Framework**: LangGraph 1.x, LangChain 1.x
+- **LLM**: Zhipu GLM-4-Flash (free) / DeepSeek (via OpenRouter), 双 provider 一键切换
+- **Retrieval**: FAISS (vector), BM25 (rank_bm25), CrossEncoder (ms-marco-MiniLM-L-6-v2)
+- **Evaluation**: 3-tier (LLM-as-Judge / RAGAs 0.4 / GEval CoT) + 100 test queries
+- **Observability**: LangSmith (trace + cost / latency dashboard)
+- **MCP**: FastMCP (3 servers, 9 tools)
 - **UI**: Streamlit
 - **Storage**: SQLite (checkpointer)
 

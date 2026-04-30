@@ -14,4 +14,10 @@ data/papers/
 .pytest_cache/
 *.md
 !README.md
+!docs/**/*.md
+!benchmarks/**/*.md
 .env.example
+benchmarks/autodl_outputs_20260429_failed/
+benchmarks/ragas_results.json
+benchmarks/geval_results.json
+nohup.out

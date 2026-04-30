@@ -45,15 +45,18 @@ class VectorRetriever:
                  persist_dir: str = None):
         import faiss
         import json
+        import os
         from openai import OpenAI
-        from config.settings import (
-            OPENROUTER_API_KEY, OPENROUTER_BASE_URL,
-            EMBEDDING_MODEL, VECTOR_DB_DIR,
-        )
+        from config.settings import EMBEDDING_MODEL, VECTOR_DB_DIR
 
         self.documents = documents
         self.embed_model = model_name or EMBEDDING_MODEL
-        self.client = OpenAI(api_key=OPENROUTER_API_KEY, base_url=OPENROUTER_BASE_URL)
+        # Embeddings always use OpenRouter (existing index built with text-embedding-3-small)
+        # LLM_PROVIDER only switches chat completions, NOT embeddings
+        self.client = OpenAI(
+            api_key=os.getenv("OPENROUTER_API_KEY", ""),
+            base_url="https://openrouter.ai/api/v1",
+        )
 
         save_dir = Path(persist_dir) if persist_dir else VECTOR_DB_DIR
         index_path = save_dir / "faiss.index"
